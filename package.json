@@ -1,0 +1,45 @@
+{
+    "name": "svelte-json-tree-view",
+    "version": "1.0.0",
+    "description": "JSONTreeView action and component for Svelte 3",
+    "svelte": "src/index.js",
+    "main": "index.js",
+    "module": "index.mjs",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "rollup -c",
+        "prepublishOnly": "npm run build",
+        "prepublish": "npm run lint && npm run build",
+        "lint": "eslint src"
+    },
+    "files": [
+        "src",
+        "index.mjs",
+        "index.js"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/PaulMaly/svelte-json-tree-view.git"
+    },
+    "keywords": [
+        "svelte"
+    ],
+    "author": "PaulMaly",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/PaulMaly/svelte-json-tree-view/issues"
+    },
+    "homepage": "https://github.com/PaulMaly/svelte-json-tree-view#readme",
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^16.0.0",
+        "@rollup/plugin-node-resolve": "^10.0.0",
+        "eslint": "^7.12.1",
+        "eslint-plugin-import": "^2.22.1",
+        "rollup": "^2.32.1",
+        "rollup-plugin-svelte": "^6.1.0",
+        "svelte": "^3.29.4"
+    },
+    "dependencies": {
+        "json-tree-view": "^0.4.12"
+    }
+}
